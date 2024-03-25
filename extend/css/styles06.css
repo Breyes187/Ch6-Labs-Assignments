@@ -39,9 +39,19 @@ main {
 }
 
 /* Gradient style rules */
-.gradient {
+.gradient1 {
     background: linear-gradient(to right, #67afeb, #1a3e4c 25%);
 }
+
+.gradient2 {
+    background-image: linear-gradient(to left, #d4f7ec 0%, #448d76 90%);
+}
+
+.gradient3 {
+    background-image: linear-gradient(to top left, #efddfd, #36065b);
+}
+
+
 
 /* Style rule for footer */
 footer {
