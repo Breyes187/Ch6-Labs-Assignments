@@ -1,7 +1,7 @@
 /*
-Author:
-Date:
-File Name: 
+Author: Brandon Reyes
+Date: 3/24/2024
+File Name: Apply06.css
 */
 
 /* CSS Reset */
@@ -44,4 +44,49 @@ footer {
 	font-size: .70em;
 	text-align: center;
     color: #341509;
+}
+
+/* Media query for tablet viewport */
+@media screen and (min-width: 481px) {
+  /* Media query to target screen and print for tablet viewport */
+  @media screen, print {
+
+    body {
+      font-size: 12pt; 
+    }
+  }
+
+  /* Style rule for the article element in tablet viewport */
+  article {
+    width: 43%;
+    float: left;
+    height: 160px;
+  }
+
+  /* Style rule for the footer selector to clear the left float */
+  footer {
+    clear: left;
+  }
+
+  /* Comment for media query for desktop viewport */
+  /* Media query for desktop viewport */
+  @media screen and (min-width: 900px) {
+    /* Add your styles for desktop viewport here */
+    body {
+      font-size: 14pt; /* Example */
+      background: linear-gradient(to left, #fe9972, #ffe5dc);
+    }
+
+    /* Style rule for the article element in desktop viewport */
+    article {
+      width: 27%;
+      height: 140px;
+    }
+
+    /* Style rule for the article element with hover pseudo-class */
+    article:hover {
+      background-color: #ffe5dc;
+      color: #a22c02;
+    }
+  }
 }
