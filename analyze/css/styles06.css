@@ -13,7 +13,7 @@ body, header, nav, main, footer, img, h1, h3, ul {
 
 /* Style rule for body and images */
 body {
-    background-color: #e5e0fa;
+    background: linear-gradient(to bottom, #e5e0fa, #29157e);
 }
 
 img {
@@ -24,15 +24,15 @@ img {
 /* Styles for Mobile Layout */
 
 /* Hide tablet-desktop content */
-    .tablet-desktop {
-        display: none;
-    }
+.tablet-desktop {
+    display: none;
+}
 
 /* Style rule for the header */
 header {
-	padding: 2%;
-	color: #110934;
-	text-align: center;
+    padding: 2%;
+    color: #110934;
+    text-align: center;
 }
 
 /* Style rules for navigation area */
@@ -59,20 +59,20 @@ nav li a {
 
 /* Style rules for the main content  */
 main {
-	display: block;
-	font-family: Georgia, "Times New Roman", sans-serif;
-	font-size: 1em;
-	padding: 1em;
-	background-color: #FFFFFF;
-	border-top: solid 0.2em #110934;
-	border-bottom: solid 0.2em #110934;
+    display: block;
+    font-family: Georgia, "Times New Roman", sans-serif;
+    font-size: 1em;
+    padding: 1em;
+    background-color: #FFFFFF;
+    border-top: solid 0.2em #110934;
+    border-bottom: solid 0.2em #110934;
 }
 
 /* Style rule for footer */
 footer {
-	font-size: .70em;
-	text-align: center;
-	margin-top: 2em;
+    font-size: .70em;
+    text-align: center;
+    margin-top: 2em;
     color: #fff;
 }
 
@@ -89,10 +89,23 @@ footer {
         padding: 0.1em 1em;
     }
 
+    /* Show tablet-desktop content */
+    /* Shows tablet desktop class */
+    .tablet-desktop {
+        display: block;
+    }
+
 }
 
 /* Media Query for Desktop Viewport */
 @media screen and (min-width: 769px), print {
+
+    /* Style rule for the header element in desktop viewport */
+    /* Header element displayed in desktop viewport */
+    header {
+        width: 25%;
+        float: left;
+    }
 
     /* Desktop Viewport: Style rules for nav */
     nav li {
@@ -104,12 +117,30 @@ footer {
         padding: 0.7em;
     }
 
+    /* Hover effect for navigation links */
+    nav li a:hover {
+          color: #4424d6;
+          background-color: #e5e0fa;
+        }
+
+    /* Align text to the right for unordered list elements within the nav element */
+    nav ul {
+        text-align: right;
+    }
+
     /* Desktop Viewport: Style rules for the main content */
     main {
         border-style: none;
         margin-bottom: 1em 0;
         overflow: auto;
     }
+
+    /* Style rule for the col-content class selector */
+        .col-content {
+            width: 30%;
+            float: left;
+            padding: 1.5%; 
+        }
 
     /* Desktop Viewport: Style rule for footer */
     footer {
